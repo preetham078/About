@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Portfolio Website (Static)
 
 This is a small, modern portfolio static site built with HTML, CSS and JavaScript.
@@ -36,3 +37,7 @@ Files:
 - [js/app.js](js/app.js)
 
 Customize the content (your name, intro) inside `index.html`.
+=======
+# About
+It contains all the information about me and list of my projects
+>>>>>>> 07deb58becafbb1bfd42b85c34e55ed365921aa4
