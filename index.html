@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — PREETHAM M</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a class="brand" href="#">PREETHAM M</a>
+      <div class="nav-right">
+        <input id="search" class="search" placeholder="Search projects..." aria-label="Search projects">
+        <button id="themeToggle" class="btn icon" title="Toggle theme"><i class="fa fa-moon"></i></button>
+        <button id="openAdd" class="btn primary">Add Project</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container main">
+    <section class="hero">
+      <h1 class="name">PREETHAM M</h1>
+      <p class="title">B.Tech Student / Developer</p>
+      <p class="lead">Hi — I'm a developer building things that live on the web. I love learning new tech and shipping projects.</p>
+    </section>
+
+    <section class="controls">
+      <div class="filters">
+        <label>Filter by tech:</label>
+        <div id="tagList" class="tag-list"></div>
+      </div>
+      <div class="github-fetch">
+        <input id="ghUser" placeholder="preetham078" />
+        <button id="fetchGH" class="btn">Fetch Repos</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div id="projects" class="grid"></div>
+    </section>
+  </main>
+
+  <!-- Add Project Modal -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button id="closeAdd" class="btn icon close">&times;</button>
+      <h3>Add Project</h3>
+      <form id="addForm">
+        <label>Title<input name="title" required></label>
+        <label>Description<textarea name="description" required></textarea></label>
+        <label>Tech stack (comma separated)<input name="tech" placeholder="JavaScript, React"></label>
+        <label>GitHub link<input name="github" placeholder="https://github.com/username/repo"></label>
+        <label>Demo link (optional)<input name="demo" placeholder="https://example.com"></label>
+        <div class="form-actions">
+          <button type="submit" class="btn primary">Add</button>
+          <button type="button" id="cancelAdd" class="btn">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>
